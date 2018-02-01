@@ -1,0 +1,9 @@
+Version 2.0.3 on 18th Apr'17
+	* [Added] - Shortcode [gs_logo4] without fixed width / height & aqua resize, so any size logo will display like free version. But other features will work like pro.
+
+Version 2.0.2 on 8th oct'16
+	* [Fix] - Grey scale issue fixed on Chrome - 8th oct'16
+	* [Fix] - Link jumping issue fixed on Ticker mode - 8th oct'16
+	* [Fix] - Center Logos Vertically
+		** note - for different height logos you have to delete value from Logo Height (px) at Style Settings tab
+	* [Fix] - Ticker pause on mouse hovers over slider

@@ -1,0 +1,16 @@
+/*
+Theme Name: MeatMayheamTournamentsFL Inovado Child
+Description: A child theme of the Inovado theme used for tailoring elements on the MeatMayhemTournamentsFL site.
+Author: John Arnold
+Author URI: https://jdacsolutions.com
+Template: inovado
+*/
+
+// ----------------------------------------------------------------------------
+// Add new class to swap out the social iconss at the top right of the top bar
+// ----------------------------------------------------------------------------
+#topbar .rightAd {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  alignright;
+}

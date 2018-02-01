@@ -1,0 +1,176 @@
+.bx-viewport {
+	height: auto !important;
+}
+
+.gs_logo_single img {
+	margin: 0 auto;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	display: none;
+	-webkit-transition: 1s all;
+	-o-transition: 1s all;
+	transition: 1s all;
+	text-decoration: none;
+	border: none;
+}
+
+.bx-wrapper:hover .bx-controls-direction a {
+	display: block;
+}
+
+.gs_logo_title {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+/*for jumping issue*/
+.gs_logo_single a, .gs_logo_single a::before, .gs_logo_single a::after {
+	-webkit-transition-duration: unset;
+	-o-transition-duration: unset;
+	transition-duration: unset;
+	-webkit-transition-timing-function: unset;
+	-o-transition-timing-function: unset;
+	transition-timing-function: unset;
+}
+
+/*vertical center issue */
+.gs_logo_single {
+	vertical-align: middle;
+	display: inline-block;
+	float: none !important;
+}
+
+/*Grays*/
+.gray {
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%); /* For Webkit browsers */
+filter: gray; /* For IE 6 - 9 */
+-webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+}
+
+.gray_to_def,
+.def_to_gray:hover {
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%); /* For Webkit browsers */
+filter: gray; /* For IE 6 - 9 */
+-webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+}
+
+.gray_to_def:hover,
+.def_to_gray {
+filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+
+/*new gray*/
+/*! Gray v1.4.5 (https://github.com/karlhorky/gray) | MIT */
+.grayscale,
+.gray_to_def,
+.def_to_gray:hover {
+  /* Firefox 10-34 */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
+
+  /*
+    Chrome 19+,
+    Safari 6+,
+    Safari 6+ iOS,
+    Opera 15+
+  */
+  -webkit-filter: grayscale(1);
+
+  /* Firefox 35+ */
+  filter: grayscale(1);
+
+  /* IE 6-9 */
+  filter: gray;
+}
+
+.grayscale.grayscale-fade {
+  transition: filter .5s;
+}
+
+/* Webkit hack until filter is unprefixed */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .grayscale.grayscale-fade {
+    -webkit-transition: -webkit-filter .5s;
+    transition:         -webkit-filter .5s;
+  }
+}
+
+.grayscale.grayscale-off,
+.grayscale.grayscale-fade:hover {
+  -webkit-filter: grayscale(0);
+  filter:         grayscale(0);
+}
+
+/* Background element */
+.grayscale.grayscale-replaced {
+  -webkit-filter: none;
+  filter:         none;
+}
+
+.grayscale.grayscale-replaced > svg {
+  -webkit-transition: opacity .5s ease;
+  transition:         opacity .5s ease;
+  opacity: 1;
+}
+
+.grayscale.grayscale-replaced.grayscale-off > svg,
+.grayscale.grayscale-replaced.grayscale-fade:hover > svg {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	.gs_logo_single {
+		width: 222px !important;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+	.gs_logo_single {
+		width: 165px !important;
+	}	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+	.gs_logo_single {
+		width: 198px !important;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+
+	.gs_logo_single {
+		width: 268px !important;
+		margin: 0 auto;
+		float: none !important;
+		display: table-cell;
+	}
+}
